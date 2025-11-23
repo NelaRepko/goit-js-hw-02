@@ -1,7 +1,10 @@
 function formatMessage(message, maxLength) {
     let shortMessage = "";
+    let shorts = "";
     if (message.length > maxLength) {
-        shortMessage = message.substring(0, maxLength-1);
+        shorts = message.substring(0, maxLength);
+        shortMessage = shorts+"...";
+
     } else {
         shortMessage = message;
     }
